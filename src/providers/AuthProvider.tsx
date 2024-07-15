@@ -63,6 +63,7 @@ const AuthProvider : FC<PropsWithChildren> = ({children}) => {
             setIsLoading(false)
             
         } catch(error){
+            setUser(null)
             console.log(error)
             
         }
